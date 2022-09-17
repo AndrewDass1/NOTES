@@ -1,0 +1,39 @@
+# Docker Commands
+
+1. Docker Login: <br>
+docker login <br>
+<br>
+
+2. Build an Image: <br>
+docker build -t "accountname"/"nameofapp" <br>
+"accountname" and "nameofapp" are placeholders. Name "accountname" accordingly to the repository that the image will be pushed too. <br>
+<br>
+
+3. Run the Image: <br>
+docker run -d -p port:port "accountname"/"nameofapp" <br>
+<br>
+
+4. Push the Image: <br>
+docker push "accountname"/"nameofapp" <br>
+<br>
+
+5. Pull an image: <br>
+docker pull "accountname"/"nameofapp" <br>
+<br>
+
+6. Check Docker Images: <br>
+docker images <br>
+<br>
+
+7.  Delete Docker Images: <br>
+docker rmi *dockerimageID* <br>
+docker rmi -f "dockerimageID" <br>
+<br>
+
+8. Retriebe Docker id: <br>
+docker container ls <br>
+docker ps -l <br>
+<br>
+
+9. Inspecting a Docker Container: <br> 
+docker inspect "dockercontainerID" <br>
