@@ -1,0 +1,83 @@
+Python Official Guide: https://docs.python.org/3/tutorial/interpreter.html <br>
+<br>
+<br>
+Chapter 1 <br>
+Python Notes: <br>
+<br>
+High-level language - high-level data types such as arrays and dictionaries <br>
+<br>
+Modules: <br>
+I/O <br>
+System Calls <br>
+Sockets <br>
+Interfaces to graphical user interface toolkits like TK <br>
+<br>
+An interpreted language - Save you considerable time during program development because no complilation and linking is necessary <br>
+<br>
+<br>
+
+Chapter 2: <br>
+Interpreter - Program that converts the code a developer writes into an 
+intermediate language, called byte code. It converts the code line by line, one at a 
+time. It translates till the end and stops at that line where an error occurs, if any,
+making the debugging process easy <br>
+<br>
+Interpreter Source: <br>
+https://pythongeeks.org/interpreter-in-python/ <br>
+<br>
+Python is an interpreted language <br>
+<br>
+Argument passing, use import sys to see what has been declared <br>
+Sys is a python module that uses commands that interacts with the interpreter <br>
+<br>
+
+Steps: <br>
+Source code -> Interpreter (Compiler + PVM - python virtual machine) converts intermediate code to bytecode <br>
+Compiler converts the source code for PVM <br>
+PVM reads and executes the commands <br>
+<br>
+<br>
+>>> - Interactive mode <br>
+<br>
+Source code encoding - UTF-8 <br>
+<br>
+Chapter 3 <br>
+# -> Comments <br>
++ -> addition <br>
+- -> subtraction <br>
+/ -> division <br>
+// -> floor division <br>
+* -> multiplication <br>
+<br>
+round(variable, 2) <br>
+2 - placeholder for decimal places <br>
+<br>
+' \' ' = single quote or " ' " <br>
+<br>
+\" \" = double quote <br>
+<br>
+<br>
+r'' <br>
+<br>
+Lists: <br>
+<br>
+Indexing: <br>
+variable_name[position] <br>
+<br>
+indexing : [starting:ending], ex: ending = 7, goes to 6th value <br>
+Always goes to position before end <br>
+<br>
+<br>
+
+Concatenate: list1 + list2 <br>
+<br>
+.append() method <br>
+<br>
+len() <br>
+<br>
+Nested Lists: <br>
+list3 = [list1, list2] <br>
+<br>
+list3[0][1] - get new position <br>
+<br>
+new line - \n <br>
