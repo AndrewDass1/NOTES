@@ -1,0 +1,45 @@
+Declarative Pipeline - Can write scripts
+Scripted pipeline - Can write scripts but needs the "node" syntax to run
+
+
+Jenkins Pipeline Basic Tips: https://www.jenkins.io/doc/book/pipeline/jenkinsfile/
+
+Explains the following: 
+Build ID
+Build Number 
+Build Tag
+Build URL
+Executor Number
+Java Home
+Jenkins URL
+Job Name
+Node Name
+Workspace
+
+use "environment" to encrypt important passwords, ex:
+
+pipeline {
+    agent {
+        // Define agent details here
+    }
+    environment {
+        AWS_ACCESS_KEY_ID     = credentials('jenkins-aws-secret-key-id')
+        AWS_SECRET_ACCESS_KEY = credentials('jenkins-aws-secret-access-key')
+    }
+    stages {
+        stage('Example stage 1') {
+            steps {
+                // 
+            }
+        }
+        stage('Example stage 2') {
+            steps {
+                // 
+            }
+        }
+    }
+}
+
+More details on setting up credentials
+
+Cron Jobs: https://www.jenkins.io/doc/book/pipeline/running-pipelines/
