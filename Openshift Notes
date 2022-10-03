@@ -93,3 +93,17 @@ helm uninstall –keep-history [release]
 
 helm get all [release]
 
+
+Helm Chart name = folder that contains Chart.yaml, templates etc
+
+So: 
+
+chart-demo (name of it):
+ - Chart.yaml
+ - templates
+   -deployment.yaml
+   -helpers.yaml
+   -ingress.yaml
+   -service.yaml
+   
+ - values.yaml
