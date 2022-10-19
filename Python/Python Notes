@@ -122,3 +122,52 @@ def name(*variable1, variable2):
   code...
   
 name()
+
+
+Chapter 5
+Make a list
+variable_name = []
+
+print - variable_name.sort() or variable_name.append() 
+or variable_name.reverse() or variable_name.pop()
+
+Have a list, use the del[] command, specify index in []
+Can use slicing
+
+Python
+Curly brackets: {}, no duplicate elements, no other data types such as []
+Add elements in sets - variable_name.add()
+Update/replace elements - variable_name.update(element, new element)
+Delete elements: var_name.discard() or use remove()
+pop in sets delete random element
+
+len, max, min, sum() of sets that use numeric elements
+
+Dictionaries and Looping Techniques
+
+knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+for k, v in knights.items():
+   print(k, v)
+   
+.keys(), .values(), .items()
+
+6. Modules
+Scripts, make the file/script then import it in another python file
+
+7. Input and Output
+f strings, format, {variable:.3f}
+where :.3f is 3 decimal places, .4f - 4 decimal places
+
+7.2 Read and Write Files
+f = open('nameoffile', 'w', encoding="utf-8")
+
+'r' - read
+'w' - write
+'a' - append
+'r+' - read and write
+
+import json
+
+8. Errors and Exceptions
+
+9. Classes
