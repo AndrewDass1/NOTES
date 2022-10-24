@@ -1,0 +1,39 @@
+What is Podman
+
+
+Other:
+Control Groups 
+
+SELinux - 
+
+Namespaces - 
+
+
+Installation
+sudo apt -y install podman
+
+Version
+podman version
+
+UID 1 = 100000
+UID 2 = 100001
+
+useradd user1
+useradd user2
+
+Deploying Containers
+
+podman list imagesSe: podman image ls
+
+podman ps
+
+podman ps -a
+
+podman search httpd
+
+Run a container:
+podman run -it rhscl/httpd-24-rhel7 /bin/bash
+
+podman run --name=www -d -p 8000:8080 rhscl/httpd-24-rhel7
+See containers: podman ps -a
+
