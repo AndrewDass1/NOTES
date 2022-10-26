@@ -17,3 +17,13 @@ Container runtime <br>
 <br>
 Kube-proxy - <b>Networking</b> component, pod IP address, basic load balancing <br>
 <br>
+Containers always runs in pods <br>
+<br>
+Tightly coupled - When two containers (app services) absolutely need to share vols, memory etc <br>
+<br>
+Loosely coupled - When two containers (app services) don't absolutely need to share resources <br>
+<br>
+Scaling with pods <br>
+<br>
+App Container - <br>
+Mesh container - <br>
