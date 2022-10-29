@@ -1,12 +1,10 @@
 # Python Notes
-
 These notes are taken from the official Python documentation, found here: https://docs.python.org/3/tutorial/interpreter.html <br>
-<br>
 
 ## Chapter 1 
 A <b>High-level language</b> contains high-level data types such as arrays and dictionaries <br>
 <br>
-Modules: <br>
+Modules are files or scripts. These files or scripts can be ran by other files by importing the script's code as a package into another python file. Examples of Modules are: <br>
 * I/O
 * System Calls
 * Sockets
@@ -25,7 +23,7 @@ A reading about the Interpreter Source: https://pythongeeks.org/interpreter-in-p
 
 
 Note: To use argument passing, use the package "sys" by writing import sys to see what has been declared. Sys is a python package that uses commands that interacts with the interpreter. <br>
-A module is any file while a package are many modules <br>
+A package are many modules <br>
 <br>
 
 Steps: <br>
@@ -40,31 +38,51 @@ Source code encoding - UTF-8 <br>
 
 ## Chapter 3
 Numeric Operation Signs or Symbols to use in Python:
-1. # -> Comments
-2. + -> addition
-3. - -> subtraction
-4. / -> division
-5. // -> floor division
-6. * -> multiplication
+1. Comments: Starts with a "#"
+```
+# Hello! This is a comment.
+```
+2. Addition: Use the "+" sign to add numbers
+```
+print(18 + 25)
+```
+3. Subtraction: Use the "-" sign to subtract numbers
+```
+print(18 - 25)
+```
+4. Division: Use the "/" to divide numbers
+```
+print(19 / 3)
+```
+5. Floor Division: Use the "//" to divide numbers and receive a whole number value as the ending result 
+```
+print(19 // 3) #The output will be 6.0
+```
+6. Multiplication: Use the "*" sign to multiply two numbers
+```
+print(2 * 6) 
+```
 
 An example of using the round function: <br>
 round(variable, 2), where 2 - placeholder for decimal places <br>
 <br>
 
-Using Quotes <br>
-' \' ' = single quote or " ' " <br>
-\" \" = double quote <br>
-<br>
-Raw String: r'' <br>
-<br>
+Using Single Quotes:
+```
+' \' ' = single quote or " ' "
+```
+Using Double Quotes:
+```
+\" \" = double quote 
+```
+Using a Raw String: 
+```
+r"Text"
+```
 
 Lists : [] <br>
-<br>
-
 Indexing: variable_name[position] or variable_name[starting:ending], ex: ending = 7, goes to 6th value. Always goes to position before end <br>
-<br>
-
-Concatenate: list1 + list2 <br>
+Concatenate_example: list1 + list2 <br>
 <br>
 
 More methods: <br>
@@ -80,49 +98,48 @@ Make a new line: <br>
 new line - \n <br>
 
 ## Chapter 4 - More Control Flow Tools
-if ,elif and else statement structure: <br>
+if, elif and else statement structure: <br>
 <br>
 
 ```
 if x < 0:
    print("")
 elif x == 0:
-   print()
+   print("")
 else:
-   print()
+   print("")
 ```
    
-How to write for statements: <br>
+How to write for statements:
+```
 for *variable* in words: <br>
-* where words is an already predefined variable that has a lot of elements <br>
+   write code here
+```
+Where words is an already predefined variable that has a lot of elements <br>
 <br>
 
-Range function: <br>
-range(start, end, increment) <br>
-<br>
+How to use the Range function:
+```
+range(start, end, increment)
+```
 
-Break and Continue: <br>
-Used only in for or while loops <br>
-<br>
-
-A resource to read more about Breaks: https://www.pythonpool.com/python-break/ <br>
-<br>
+Break and Continue keywords are used only in for or while loops. A resource to read more about Breaks: https://www.pythonpool.com/python-break/ <br>
 Using the keyword "pass" is a placeholder that will execute in a Python file, but won't make changes to the code <br>
 <br>
 
-How to use Match: <br>
+How to use Match:
+```
 match ....: <br>
     case number or variable: <br>
         return "" <br>
+```
         
-Functions <br>
-Define the function: <br>
-def name(*variable1, variable2): <br>
-  code... <br>
-<br>
-
-Running the Function <br>
-name() <br>
+How to write and define Functions:
+```
+def name(*variable1, variable2):
+  return("")
+```
+* name, variable1, and variable2 are placeholder values
 
 
 ## Chapter 5
@@ -130,36 +147,26 @@ Make a list variable -> variable_name = [] <br>
 <br>
 
 Commands:
-print - variable_name.sort() or variable_name.append() <br>
-or variable_name.reverse() or variable_name.pop() <br>
-<br>
-Have a list, use the del[] command, specify index in [] <br>
-Can use slicing <br>
-<br>
-
-Curly brackets: {}, no duplicate elements, no other data types such as [] <br>
-Add elements in sets - variable_name.add() <br>
-Update/replace elements - variable_name.update(element, new element) <br>
-Delete elements: var_name.discard() or use remove() <br>
-pop in sets delete random element <br>
+1. variable_name.sort() 
+2. variable_name.append()
+3. variable_name.reverse() or variable_name.pop()
+4. del[] - Specify index in list for that element to be deleted
+5. Curly brackets: {}, no duplicate elements, no other data types such as []
+6. Add elements in sets - variable_name.add() <br>
+7. Update/replace elements - variable_name.update(element, new element)
+8. Delete elements: var_name.discard() or use remove()
+9. pop in sets delete random element
 <br>
 len, max, min, sum() of sets that use numeric elements <br>
 <br>
 
-Dictionaries and Looping Techniques: <br>
-knights = {'gallahad': 'the pure', 'robin': 'the brave'} <br>
-for k, v in knights.items(): <br>
-   print(k, v) <br>
-<br>
+Dictionaries and Looping Techniques:
+```
+knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+for k, v in knights.items():
+   print(k, v)
+```
 .keys(), .values(), .items() <br>
-
-6. Modules
-Scripts, make the file/script then import it in another python file <br>
-
-7. Input and Output <br>
-f strings, format, {variable:.3f} <br>
-where :.3f is 3 decimal places, .4f - 4 decimal places <br>
-<br>
 
 7.2 Read and Write Files <br>
 f = open('nameoffile', 'w', encoding="utf-8") <br>
