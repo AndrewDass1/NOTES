@@ -1,11 +1,11 @@
 # Docker Commands
 
-1. Docker Login
+1. Docker Login:
 ```
 docker login
 ```
 
-2. Build an Image
+2. Build an Image:
 ```
 docker build -t "registry"/"nameofapp" "directory"
 ```
@@ -32,7 +32,7 @@ docker pull "accountname"/"nameofapp"
 docker images
 ```
 
-7.  Delete Docker Images
+7.  Delete Docker Images:
 ```
 docker rmi *dockerimageID*
 ```
