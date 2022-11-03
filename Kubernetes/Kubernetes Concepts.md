@@ -163,3 +163,12 @@ Check for replica sets:
 ```
 kubectl get rs
 ```
+
+## Rollout
+```
+kubectl rollout status
+```
+
+```
+kubectl rollout undo 
+```
