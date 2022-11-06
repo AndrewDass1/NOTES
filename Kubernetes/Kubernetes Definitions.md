@@ -71,8 +71,3 @@ Objects Within API server:
 APIServer - Rest, Https, use Kubectl to configure and query apiserver <br>
 <br>
 K8's Cluster - Control plane, Worker nodes
-- 
- 
- ### Using Kubernetes
- - Install kubectl
- - 
