@@ -45,30 +45,62 @@ kubectl version
 ```
 kubectl cluster-info
 ```
-DNS
+Shows the DNS and cluster information
 
 ```
 kubectl get all
 ```
 Get all the resources
 
+## Pods
+Pod - Are the smallest deployable units of computing that you can create and manage in Kubernetes. Is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers. <br>
+<br>
+Pod Details: <br>
+* Smallest object in Kubernetes
+* Pods have:
+  * IP
+  * Memory
+  * Volumes
+
+### Run a Pod
 ```
-kubectl run container-name --image name
+kubectl run *podname* --image=""
+```
+Can use "kubectl apply -f ...", where "..." is the name of the yaml file and is the yaml file is the blueprints to start a pod up <br>
+<br>
+```
+kubectl get pod or kubectl get pods
+```
+Receive information about a pod or pods
+```
+kubectl get all
+```
+Receive information about pods and other Kubernetes objects
+
+### Expose a Pod Port
+```
+kubectl port-forward *podname 8080:80
+```
+External port - 8080 <br>
+Internal port - 80 <br>
+<br>
+
+### Delete Resources
+```
+kubectl delete pod *podname
 ```
 
 ```
-kubectl port-forward *pod *ports
+kubectl delete deployment *deployment name
 ```
 
+## Updating
 ```
-kubectl expose
+kubectl create -f *name.yml --save-config
 ```
-
+or use
 ```
-kubectl create *resource
-```
-
-```
-kubectl apply ....
+kubectl apply -f *name.yml
 ```
 
+## Pod Health
