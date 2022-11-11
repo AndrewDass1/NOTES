@@ -29,3 +29,22 @@
 BIOS - Basic Input Output System <br>
 UEFI - Unifed Extensible Firmware Interface <br>
 <br>
+
+## Root Level Directories
+* /bin - Binary files for single user mode system commands <br>
+* /sbin - Binary files for multi-user system commands <br>
+* /boot - Boot configuration files to start up Linux images <br>
+* /dev - Pseudo files representing devices <br>
+* /etc - Configuration files <br>
+* /home - User files <br>
+* /lib - Software library dependencies <br>
+* /root <br>
+* /usr - More binaries <br>
+* /var - Update files, logs, cache and more app data <br>
+
+## Pseudo File Directories
+* /proc - Files representing running system processes <br>
+* /dev - Pseudo files representing devices <br>
+* /sys - Data on system and kernel resources
+
+## 
