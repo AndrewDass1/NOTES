@@ -58,3 +58,4 @@ podman restart containername
 ```
 podman kill containername
 ```
+containerID can be used instead of containername
