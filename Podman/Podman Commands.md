@@ -15,10 +15,6 @@ podman ps -a
 ```
 List all containers, including ones that are deleted
 
-```
-podman run --name="" -d -p 8080:80 imagename
-```
-Running an image, "imagename" is the name of the image and the empty "" is how the script is executed. In the "" placeholder, /bin/bash can be written there for example. 8080:80 are placeholder ports. 
 
 ```
 podman pull ...
@@ -36,6 +32,29 @@ podman push "imagename"
 Push an image
 
 ```
+podman tag "imagename" "newimagename"
+```
+Rename an existing image under a new name. The image with its old name will remain and the image with its new name will be created. 
+
+```
 podman build -t imagename .
 ```
 Building an image. Podman build documentation: https://docs.podman.io/en/latest/markdown/podman-build.1.html
+
+```
+podman run --name="" -d -p 8080:80 imagename
+```
+Running an image, "imagename" is the name of the image and the empty "" is the new name given to the container. 8080:80 are placeholder ports. 
+
+## Container Commands
+```
+podman stop containername
+```
+
+```
+podman restart containername
+```
+
+```
+podman kill containername
+```
