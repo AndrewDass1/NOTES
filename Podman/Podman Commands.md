@@ -59,3 +59,22 @@ podman restart containername
 podman kill containername
 ```
 containerID can be used instead of containername
+
+```
+podman rm containername
+```
+Delete a container
+```
+podman rm -f containername
+```
+Forcibly delete a container
+
+```
+podman rmi imagename
+```
+Remove an image, can use imageid instead of imagename
+
+```
+podman rmi -f imagename
+```
+Forcibly delete an image
