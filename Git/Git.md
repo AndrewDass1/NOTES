@@ -103,3 +103,7 @@ git push origin main
 ```
 git config --global remote.origin.url "Github Repo"
 ```
+
+```
+git merge branch_name_that_would_be_merged_into_current_branch
+```
