@@ -55,3 +55,8 @@ This command shows which containers are running on a default port.
 ```
 docker inspect "dockercontainerID"
 ```
+
+10. Log in into an existing docker container (after it was created with the build command):
+```
+docker exec -it container_id /bin/bash
+```
