@@ -1,4 +1,4 @@
-# Checking Bash System
+# Checking Bash System for Latest Stats
 
 proc directory shows many stats to look at, such as cpu, memory, drivers and much more <br> 
 <br>
@@ -52,4 +52,49 @@ systemctl enable ....
 
 ```
 systemctl disable ....
+```
+
+Checking Users and Permissions
+```
+id ...
+```
+
+```
+who
+```
+
+```
+w
+```
+
+```
+last
+```
+
+Add User
+```
+sudo useradd -m user_name
+```
+Add password
+```
+sudo passwd user_name
+```
+Make a group
+```
+sudo groupadd group_name
+```
+
+Change Ownership
+```
+sudo chown :group_name directory
+```
+
+Add a user to a group
+```
+sudo usermod -a -G  group_name user
+```
+
+Change permissions of directory
+```
+sudo chmod g+w directory
 ```
