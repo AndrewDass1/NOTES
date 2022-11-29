@@ -1,4 +1,4 @@
-# Checking Bash System for Latest Stats
+# Checking the Linux OS for Latest Stats
 
 proc directory shows many stats to look at, such as cpu, memory, drivers and much more <br> 
 <br>
