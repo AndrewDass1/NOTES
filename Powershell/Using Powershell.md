@@ -22,7 +22,7 @@ Get-ExecutionPolicy
 ```
 
 ## Script Extensions
-
+.ps or .ps1
 
 
 ## Make a file
