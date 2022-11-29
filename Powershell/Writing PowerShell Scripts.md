@@ -4,15 +4,22 @@
 
 ### If and Else Statements
 $variable="value"
-if(variable)
+```
+if($variable)
 {
   Write-Output "The $variable ...."
+}
+
+elseif($variable)
+{
+  Write-Output "....."
 }
 
 else
 {
   Write-Output "The $variable ...."
 }
+```
 
 ## Scopes
 1. MachinePolicy
