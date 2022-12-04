@@ -79,3 +79,8 @@ General Layout:
 </html>
 
 ```
+
+Add a Button with a Link:
+```
+ <button button_name="window.location.href='html page';">Add text for the button</button>
+```
