@@ -179,6 +179,3 @@ Commands to Read and Write Files: <br>
 4. 'r+' - read and write
 
 Json files can be read and written by importing the package by specifying "import json" in the script
-
-## Chapter 9
-How to Write Classes: <br>
